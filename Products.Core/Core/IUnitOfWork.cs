@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Products.Core
 {
-    interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
         IProductRepository Products { get; }
         int Complete();

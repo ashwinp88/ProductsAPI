@@ -52,7 +52,9 @@
     <Compile Include="Core\IUnitOfWork.cs" />
     <Compile Include="DataAccess\EntityConfigurations\ProductConfiguration.cs" />
     <Compile Include="DataAccess\ProductContext.cs" />
+    <Compile Include="DataAccess\Repositories\ProductRepository.cs" />
     <Compile Include="DataAccess\Repositories\Repository.cs" />
+    <Compile Include="DataAccess\UnitOfWork.cs" />
     <Compile Include="Migrations\201907030121230_InitialModelCreation.cs" />
     <Compile Include="Migrations\201907030121230_InitialModelCreation.Designer.cs">
       <DependentUpon>201907030121230_InitialModelCreation.cs</DependentUpon>

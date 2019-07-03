@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Products.DataAccess
 {
-    class ProductContext : DbContext
+    public class ProductContext : DbContext
     {
         public ProductContext()
             : base("name=dev")

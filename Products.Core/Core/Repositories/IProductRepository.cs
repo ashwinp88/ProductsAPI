@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Products.Core.Repositories
 {
-    interface IProductRepository : IRepository<Product>
+    public interface IProductRepository : IRepository<Product>
     {
         IEnumerable<Product> GetProducts(int pageIndex, int pageSize);
     }
