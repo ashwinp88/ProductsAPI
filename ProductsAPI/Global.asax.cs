@@ -13,5 +13,17 @@ namespace ProductsAPI
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
+
+        internal protected void Application_BeginRequest(object sender, EventArgs e)
+        {
+            var res = HttpContext.Current.Response;
+            var req = HttpContext.Current.Request;
+
+            if (req.HttpMethod == "OPTIONS")
+            {
+                res.StatusCode = 200;
+                res.End();
+            }
+        }
     }
 }
