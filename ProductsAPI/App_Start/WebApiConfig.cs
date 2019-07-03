@@ -19,7 +19,6 @@ namespace ProductsAPI
             // Web API configuration and services
             var container = new UnityContainer();
             container.RegisterType<IUnitOfWork, UnitOfWork>(new HierarchicalLifetimeManager());
-            container.RegisterType<IProductRepository, ProductRepository>(new HierarchicalLifetimeManager());
             config.DependencyResolver = new UnityResolver(container);
 
             // Web API routes
